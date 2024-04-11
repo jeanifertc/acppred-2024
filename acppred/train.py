@@ -28,7 +28,7 @@ def train_model(csv_file:str, output_file:str) ->BaseEstimator:
 
     return model
 
-def envaluate_model(model:BaseEstimator, csv_file:str) -> str:
+def evaluate_model(model:BaseEstimator, csv_file:str) -> str:
     """
     Evaluate a classification model using a test dataset and returns a classification report
 
@@ -48,5 +48,5 @@ def envaluate_model(model:BaseEstimator, csv_file:str) -> str:
 
 if __name__== '__main__':
     model = train_model('data/processed/train.csv', 'data/models/model.pickle')
-    report = envaluate_model(model, 'data/processed/test.csv')
+    report = evaluate_model(model, 'data/processed/test.csv')
     print(report)    
