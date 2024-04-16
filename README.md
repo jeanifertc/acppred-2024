@@ -9,7 +9,7 @@ anticancer peptide prediction software
 Run the following command to install the acppred program (mamba is required)
 
 ```
-$ make setup
+# make setup
 ```
 
 - ' Makefile': arquivo que centraliza os comandos serem executados pelo programa 'make'.
